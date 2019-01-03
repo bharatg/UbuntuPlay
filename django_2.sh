@@ -1,6 +1,8 @@
 #!/bin/sh
-
-sudo su << EOFSU 
+project_name="bharat"
+project_password="password"
+project_ip="127.0.0.1:8000"
+project_domain="104.196.68.173"
 cd /root
 
 # Create project user, venv, and setup django
@@ -9,7 +11,7 @@ sudo adduser  --disabled-password $project_name
 sudo gpasswd -a $project_name sudo
 
 # Django setup as project user
-su $project_name<<EOF
+sudo su $project_name<<EOF
 cd /home/$project_name
 python3 -m venv .
 source bin/activate
@@ -23,4 +25,3 @@ cd ..
 django-admin startapp main
 pip install gunicorn
 EOF
-EOFSU 
