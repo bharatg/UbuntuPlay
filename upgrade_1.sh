@@ -6,7 +6,7 @@
 project_name="bharat"
 project_password="password"
 project_ip="127.0.0.1:8000"
-project_domain="104.196.53.61"
+project_domain="104.196.68.173"
 
 echo "[DJANGOGO] UPDATING SYSTEM & INSTALLING DEPENDENCIES..."
 sudo apt-get update
