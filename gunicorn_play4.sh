@@ -8,7 +8,6 @@ project_password="password"
 project_ip="127.0.0.1:8000"
 project_domain="104.196.68.173"
 
-sudo su << EOFSU
 # Create gunicorn_start file
 echo "[DJANGOGO] CONFIGURING GUNICORN..."
 cd /home/$project_name/bin
@@ -36,4 +35,3 @@ exec /home/$project_name/bin/gunicorn \${DJANGO_WSGI_MODULE}:application \\
   --log-level=\$LOG_LEVEL \\
   --log-file=-
 EOF
-EOFSU
