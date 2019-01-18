@@ -2,10 +2,10 @@
 # Ubuntu 16.04 LTS / Ubuntu 18.04 LTS
 # CONFIGURE THE FOLLOWING SECTION 
 # --------------------------------------------
-project_name="bharat"
-project_password="password"
-project_ip="35.243.131.11"
-project_domain="greatbharat.in 35.243.131.11"
+read -p "project_name" project_name
+read -p "project_password" project_password
+read -p "project_ip" project_ip
+read -p "project_domain" project_domain
 # --------------------------------------------
 # NOTE: project_password serves as the password for postgres database that is created
 # USAGE:
